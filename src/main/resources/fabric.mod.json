@@ -1,35 +1,15 @@
 {
   "schemaVersion": 1,
-  "id": "%s",
+  "id": "stationfluidapi",
   "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Station Fluid API",
+  "description": "A Fluid API implementation designed for StationAPI",
   "authors": [
-    "Me!"
+    "Yunivers"
   ],
-  "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/stationapi-example-mod"
-  },
-
-  "license": "CC0-1.0",
-  "icon": "assets/%s/icon.png",
-
+  "license": "MIT",
+  "icon": "assets/stationfluidapi/icon.png",
   "environment": "*",
-  "entrypoints": {
-    "stationapi:event_bus": [
-      "%s.events.init.InitListener"
-    ],
-    "stationapi:event_bus_client": [
-    ],
-    "stationapi:event_bus_server": [
-    ]
-  },
-  "mixins": [
-    "%s.mixins.json"
-  ],
-
   "depends": {
     "minecraft": "1.0.0-beta.7.3"
   }
