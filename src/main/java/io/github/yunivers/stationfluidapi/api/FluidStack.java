@@ -57,6 +57,11 @@ public class FluidStack
         }
     }
 
+    public FluidStack(NbtCompound nbt)
+    {
+        readNbt(nbt);
+    }
+
     public void readNbt(NbtCompound nbt)
     {
         fluid = (LiquidBlock)Block.BLOCKS[nbt.getInt("FluidID")];
