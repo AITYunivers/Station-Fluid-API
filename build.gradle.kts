@@ -117,12 +117,12 @@ tasks.withType<Jar> {
 publishing {
 	repositories {
 		mavenLocal()
-		if (project.hasProperty("my_maven_username")) {
+		if (project.hasProperty("glass_maven_username")) {
 			maven {
-				url = URI("https://maven.example.com")
+				url = URI("https://maven.glass-launcher.net/snapshots")
 				credentials {
-					username = "${project.properties["my_maven_username"]}"
-					password = "${project.properties["my_maven_password"]}"
+					username = "${project.properties["glass_maven_username"]}"
+					password = "${project.properties["glass_maven_password"]}"
 				}
 			}
 		}

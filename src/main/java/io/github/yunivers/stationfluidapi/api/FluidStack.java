@@ -157,10 +157,10 @@ public class FluidStack
         return Item.BUCKET.id;
     }
 
-    public Sprite getSprite()
+    public Sprite getSprite(int side, int meta)
     {
         if (fluid instanceof StationFluid sFluid)
-            return sFluid.getSprite();
-        return Atlases.getTerrain().getTexture(fluid.id).getSprite();
+            return sFluid.getSprite(side, meta);
+        return Atlases.getTerrain().getTexture(fluid.getTexture(side, meta)).getSprite();
     }
 }
